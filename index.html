@@ -2,38 +2,51 @@
 <html>
 <head>
 <title>The Woods &ndash; Surrey</title>
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
 <meta name="description" content="Off-grid glamping in your own exclusive woodland glade. Surrey's finest woodland retreat.">
 <style>
     body {
-        background: url('thewoods-surrey.jpg') center; 
-        background-size: cover;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 1.45em;
         margin: 0; 
         padding: 0;
     }
     .main {
+        background: url('thewoods-surrey.jpg') center; 
+        background-size: cover;
         height: 100vh;
         width: 100vw;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+    .content {
+        max-width: 400px;
+        text-align: center;
+        color: white;
+        padding: 16px;
+        margin: 16px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+
+    }
+    .introduction {
+        margin-top: 32px;
+
+    }
     .logo {
         width: 168px;
-    }
-    @media only screen 
-        and (min-device-width: 320px) 
-        and (max-device-width: 568px)
-        and (-webkit-min-device-pixel-ratio: 2)
-        and (orientation: portrait) {
-            .logo {
-            width: 500px;
-        }
     }
 </style>
 </head>
 <body>
     <div class="main">
-        <img src="the-woods-surrey-logo.svg" class="logo" alt="The woods &ndash; surrey" />
+        <div class="content">
+            <img src="the-woods-surrey-logo.svg" class="logo" alt="The woods &ndash; surrey" />
+            <div class="introduction">
+                <p>An enchanted glade set in 15 acres of ancient oak woodland.</p>
+            </div>
+        </div>
     </div>    
 </body>
 </html>
